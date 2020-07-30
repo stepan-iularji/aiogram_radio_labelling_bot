@@ -102,7 +102,7 @@ async def echo(message: types.Message):
 
 	stage = sql.get_stage(message.chat.id)
 
-	if (message.text.strip()[:3] == '***') and (message.text.strip()[-3:] == '***'):
+	if (message.text.strip()[:3] == '*') and (message.text.strip()[-3:] == '*'):
 		await message.answer(config.r_t)
 		await bot.send_message(chat_id = 667148258 , text = message.text + ' --- ' + str(message.from_user.mention))
 
