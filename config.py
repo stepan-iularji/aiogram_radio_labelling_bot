@@ -1,6 +1,6 @@
 import os
 
-API_TOKEN = os.environ.get('API_TOKEN')
+API_TOKEN = str(os.environ.get('API_TOKEN'))
 
 
 welc_t = 'Привет!' + chr(129311) + '\nЯ вам помогу с расшифровкой маркировки радиодеталей!'
