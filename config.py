@@ -1,4 +1,6 @@
-API_TOKEN = '971021342:AAF9NkhhoTwOcfMSPKue-7VHtZGVUvRi2ik'
+import os
+
+API_TOKEN = os.environ.get('API_TOKEN')
 
 
 welc_t = 'Привет!' + chr(129311) + '\nЯ вам помогу с расшифровкой маркировки радиодеталей!'
